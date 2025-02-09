@@ -1,3 +1,4 @@
+%%writefile fit.py
 import streamlit as st
 from agno.agent import Agent
 from agno.models.google import Gemini
@@ -135,6 +136,7 @@ def main():
                 options=["Lose Weight", "Gain Muscle", "Endurance", "Stay Fit", "Strength Training"],
                 help="What do you want to achieve?"
             )
+            nation = st.text_input("Nation",placeholder='India', help="Enter your Nationality")
 
         if st.button("🎯 Generate My Personalized Plan", use_container_width=True):
             with st.spinner("Creating your perfect health and fitness routine..."):
@@ -160,6 +162,7 @@ def main():
                             "Include warm-up, main workout, and cool-down exercises.",
                             "Explain the benefits of each recommended exercise.",
                             "Ensure the plan is actionable and detailed.",
+                            "Be detailed about this curated diet and safety measures in case needed"
                         ]
                     )
 
