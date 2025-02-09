@@ -1,5 +1,5 @@
 
-🏋️‍♂️ AI Health & Fitness Planner
+** 🏋️‍♂️ AI Health & Fitness Planner **
 Access App https://llm-app-uvxm6r5was7hkkngyv5j8o.streamlit.app/
 
 
